@@ -36,3 +36,11 @@ if __name__ == "__main__":
         self.assertEqual(self.cart.items[0].title, "A title")
         self.cart.sort_by_cost()
         self.assertEqual(self.cart.items[0].cost, 50.0)
+
+    def test_search_by_category(self):
+        from aims.search import search_by_category
+        d1 = DigitalVideoDisc("A", category="Animation")
+        d2 = DigitalVideoDisc("B", category="Action")
+        results = search_by_category([d1, d2], "animation")
+        self.assertEqual(len(results), 1)
+        self.assertEqual(results[0].title, "A")
