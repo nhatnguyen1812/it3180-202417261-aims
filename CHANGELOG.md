@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-11-02
+### Fixed
+- Tìm kiếm tiêu đề không phân biệt hoa thường search_by_title() (#16).
+
+
 ## [1.0.0] - 2026-11-02
 ### Added
 - Cấu trúc gói mã nguồn `aims/` gồm `DigitalVideoDisc` và `Cart`.
