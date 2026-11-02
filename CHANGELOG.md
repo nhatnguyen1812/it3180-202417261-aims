@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+
+## [1.0.1] - 2026-11-02
+### Fixed
+- Tìm kiếm tiêu đề không phân biệt hoa thường search_by_title() (#16).
+
 ### Added
 - Bổ sung chức năng sắp xếp giỏ hàng: sort_by_title() và sort_by_cost().
 
