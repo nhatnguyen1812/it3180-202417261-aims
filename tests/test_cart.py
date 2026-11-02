@@ -26,3 +26,9 @@ class TestCart(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+    def test_search_by_title_case_insensitive(self):
+        from aims.search import search_by_title
+        d = DigitalVideoDisc("The Lion King")
+        results = search_by_title([d], "lion")
+        self.assertEqual(len(results), 1)
