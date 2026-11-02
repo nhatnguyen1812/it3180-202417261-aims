@@ -3,6 +3,8 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+### Added
+- Bổ sung chức năng sắp xếp giỏ hàng: sort_by_title() và sort_by_cost().
 
 ## [1.0.0] - 2026-11-02
 ### Added
