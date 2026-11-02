@@ -44,3 +44,9 @@ if __name__ == "__main__":
         results = search_by_category([d1, d2], "animation")
         self.assertEqual(len(results), 1)
         self.assertEqual(results[0].title, "A")
+
+    def test_search_by_title_case_insensitive(self):
+        from aims.search import search_by_title
+        d = DigitalVideoDisc("The Lion King")
+        results = search_by_title([d], "lion")
+        self.assertEqual(len(results), 1)
